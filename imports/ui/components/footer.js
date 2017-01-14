@@ -5,12 +5,14 @@ import './footer.html';
 
 Template.footer.events({
   'keydown input'(event, tpl) {
-    if(event.keyCode == 13){
+    if(event.keyCode == 13) {
       let msg = event.currentTarget.value;
+      let user = Meteor.user();
+      let date = new Date();
       tpl.$(event.currentTarget).val("");
-      console.log("Saisie: " + msg);
-      let msgs = Session.get('messages') || [];
-      Messages.insert({username: "Rudy", createdAt:"1:13 AM", message: msg});
+      if(!user)
+        return alert("You have to be connected to post messages");
+      Messages.insert({username: user.username, createdAt:date, message: msg});
     }
   }
 });
