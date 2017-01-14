@@ -1,11 +1,11 @@
 import { Template } from 'meteor/templating';
-import { Session } from 'meteor/session';
+import { Messages } from '/imports/api/messages/messages.js';
 
 import './message.html';
 import './messages.html';
 
 Template.messages.helpers({
   messages() {
-    return Session.get('messages');
+    return Messages.find();
   }
 });
