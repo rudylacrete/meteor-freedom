@@ -2,6 +2,8 @@
   <div class="message-history">
     {{#each messageModel in messages}}
       {{> message messageModel}}
+    {{else}}
+      Aucun message!
     {{/each}}
   </div>
 </template>
