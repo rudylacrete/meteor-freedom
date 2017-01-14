@@ -1,11 +1,18 @@
 <template name="header">
   <div class="header">
-    <div class="team-menu">Freedom</div>
+    <div class="team-menu">Freedom 
+    {{#unless currentUser}} 
+      {{> loginButtons}}
+    {{/unless}}
+    </div>
     <div class="channel-menu">
       <span class="channel-menu_name">
         <span class="channel-menu_prefix">#</span>
         general
       </span>
+    </div>
+    <div class="account">
+    
     </div>
   </div>
 </template>
