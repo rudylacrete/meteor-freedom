@@ -3,15 +3,9 @@
     <div class="listings_channels">
       <h2 class="listings_header">Channels</h2>
       <ul class="channel_list">
-        <li class="channel active ">
-          <a class="channel_name">
-            <span class="unread">0</span>
-            <span>
-              <span class="prefix">#</span>
-              rout littoral
-            </span>
-          </a>
-        </li>
+      {{#each channel in channels}}
+        {{> menuItem channel=channel}}
+      {{/each}}
       </ul>
 
     </div>
