@@ -1,4 +1,5 @@
 <template name="messages">
+  {{#if Template.subscriptionsReady}}
   <div class="message-history">
     {{#each messageModel in messages}}
       {{> message messageModel}}
@@ -6,4 +7,7 @@
       Aucun message!
     {{/each}}
   </div>
+  {{else}}
+    {{> spinner}}
+  {{/if}}
 </template>
