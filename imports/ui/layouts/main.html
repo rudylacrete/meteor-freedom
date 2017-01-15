@@ -1,8 +1,8 @@
-<body>
+<template name="mainLayout">
   {{> header }}
   <div class="main">
     {{> sidebar }}
-    {{> messages }}
+    {{> Template.dynamic template=main}}
   </div>
   {{> footer }}
-</body>
+</template>

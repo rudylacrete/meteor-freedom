@@ -9,6 +9,8 @@ import "/imports/ui/stylesheets/global.css";
 import "/imports/ui/tools/helpers.js";
 import "/imports/ui/layouts/main.js";
 
+import "./router.js";
+
 import { GENERAL_CHANNEL_NAME } from '/imports/api/channels/channels.js';
 
 Session.setDefault('selectedChannel', GENERAL_CHANNEL_NAME);
