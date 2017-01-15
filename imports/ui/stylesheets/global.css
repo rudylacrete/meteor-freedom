@@ -200,6 +200,7 @@ body {
   margin-right: 17px;
   color: #ffffff;
   padding-left: 1rem;
+  cursor: pointer;
 }
 
 /* line 35, ../tests/sass/components/_listings.scss */
