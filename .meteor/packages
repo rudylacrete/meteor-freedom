@@ -25,3 +25,6 @@ sacha:spin
 
 kadira:flow-router
 kadira:blaze-layout
+aldeed:simple-schema
+aldeed:collection2
+mdg:validated-method
